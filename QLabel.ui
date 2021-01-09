@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow5</class>
+ <widget class="QMainWindow" name="MainWindow5">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>767</width>
+         <height>1500</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+
+
+.blob-code-inner{overflow:visible;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;color:var(--color-text-primary);word-wrap:normal;white-space:pre}
+
+.pl-k{color:#d73a49}
+.pl-v{color:#005cc5}
+.pl-en{color:#6f42c1}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;hr&gt;
+&lt;br&gt;&lt;b&gt;
+&lt;h2 ALIGN=&quot;center&quot;&gt;Виджет QLabel &lt;/h2&gt;
+&lt;/b&gt;
+&lt;p&gt;
+Виджет QLabel позволяет отображать текст или рисунок.
+&lt;p&gt;
+&lt;h3&gt;Меняем шрифт QLabel&lt;/h3 &gt;
+&lt;p&gt;
+Чтобы поменять шрифт QLabel, используйте метод setFont() и передайте ему QFont следующим образом:
+&lt;p&gt;
+&lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot; data-paste-markdown-skip&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC1&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-k&gt;from&lt;/span&gt; &lt;span class=pl-v&gt;PyQt5&lt;/span&gt; &lt;span class=pl-k&gt;import&lt;/span&gt; &lt;span class=pl-v&gt;QtWidgets&lt;/span&gt;, &lt;span class=pl-v&gt;QtGui&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC2&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-k&gt;from&lt;/span&gt; &lt;span class=pl-s1&gt;mydesign&lt;/span&gt; &lt;span class=pl-k&gt;import&lt;/span&gt; &lt;span class=pl-v&gt;Ui_MainWindow&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC3&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-k&gt;import&lt;/span&gt; &lt;span class=pl-s1&gt;sys&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC5&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC6&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-k&gt;class&lt;/span&gt; &lt;span class=pl-s1&gt;mywindow&lt;/span&gt;(&lt;span class=pl-v&gt;QtWidgets&lt;/span&gt;.&lt;span class=pl-v&gt;QMainWindow&lt;/span&gt;):&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC7&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC8&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;    &lt;span class=pl-k&gt;def&lt;/span&gt; &lt;span class=pl-en&gt;__init__&lt;/span&gt;(&lt;span class=pl-s1&gt;self&lt;/span&gt;):&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC9&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-en&gt;super&lt;/span&gt;(&lt;span class=pl-s1&gt;mywindow&lt;/span&gt;, &lt;span class=pl-s1&gt;self&lt;/span&gt;).&lt;span class=pl-en&gt;__init__&lt;/span&gt;()&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC10&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-s1&gt;self&lt;/span&gt;.&lt;span class=pl-s1&gt;ui&lt;/span&gt; &lt;span class=pl-c1&gt;=&lt;/span&gt; &lt;span class=pl-v&gt;Ui_MainWindow&lt;/span&gt;()&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC11&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-s1&gt;self&lt;/span&gt;.&lt;span class=pl-s1&gt;ui&lt;/span&gt;.&lt;span class=pl-en&gt;setupUi&lt;/span&gt;(&lt;span class=pl-s1&gt;self&lt;/span&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC12&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC13&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-s1&gt;self&lt;/span&gt;.&lt;span class=pl-s1&gt;ui&lt;/span&gt;.&lt;span class=pl-s1&gt;label&lt;/span&gt;.&lt;span class=pl-en&gt;setFont&lt;/span&gt;(&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC14&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;            &lt;span class=pl-v&gt;QtGui&lt;/span&gt;.&lt;span class=pl-v&gt;QFont&lt;/span&gt;(&lt;span class=pl-s&gt;&amp;#39;SansSerif&amp;#39;&lt;/span&gt;, &lt;span class=pl-c1&gt;30&lt;/span&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC15&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        ) &lt;span class=pl-c&gt;# Изменение шрифта и размера&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC16&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC17&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC18&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-s1&gt;app&lt;/span&gt; &lt;span class=pl-c1&gt;=&lt;/span&gt; &lt;span class=pl-v&gt;QtWidgets&lt;/span&gt;.&lt;span class=pl-v&gt;QApplication&lt;/span&gt;([])&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC19&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-s1&gt;application&lt;/span&gt; &lt;span class=pl-c1&gt;=&lt;/span&gt; &lt;span class=pl-en&gt;mywindow&lt;/span&gt;()&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC20&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-s1&gt;application&lt;/span&gt;.&lt;span class=pl-en&gt;show&lt;/span&gt;()&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC21&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-123-py-LC22&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-s1&gt;sys&lt;/span&gt;.&lt;span class=pl-en&gt;exit&lt;/span&gt;(&lt;span class=pl-s1&gt;app&lt;/span&gt;.&lt;span class=pl-en&gt;exec&lt;/span&gt;())&lt;/td&gt;
+      &lt;/tr&gt;
+
+&lt;/table&gt;
+&lt;p&gt;
+&lt;h3&gt;Меняем размер QLabel&lt;/h3&gt;
+&lt;p&gt;
+Чтобы поменять размер QLabel, вам нужно указать его геометрию при помощи метода setGeometry(), вот так:
+&lt;p&gt;
+&lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot; data-paste-markdown-skip&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC1&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-k&gt;from&lt;/span&gt; &lt;span class=pl-v&gt;PyQt5&lt;/span&gt; &lt;span class=pl-k&gt;import&lt;/span&gt; &lt;span class=pl-v&gt;QtWidgets&lt;/span&gt;, &lt;span class=pl-v&gt;QtGui&lt;/span&gt;,&lt;span class=pl-v&gt;QtCore&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC2&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-k&gt;from&lt;/span&gt; &lt;span class=pl-s1&gt;mydesign&lt;/span&gt; &lt;span class=pl-k&gt;import&lt;/span&gt; &lt;span class=pl-v&gt;Ui_MainWindow&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC3&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-k&gt;import&lt;/span&gt; &lt;span class=pl-s1&gt;sys&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC4&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC5&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-k&gt;class&lt;/span&gt; &lt;span class=pl-s1&gt;mywindow&lt;/span&gt;(&lt;span class=pl-v&gt;QtWidgets&lt;/span&gt;.&lt;span class=pl-v&gt;QMainWindow&lt;/span&gt;):&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC6&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC7&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;    &lt;span class=pl-k&gt;def&lt;/span&gt; &lt;span class=pl-en&gt;__init__&lt;/span&gt;(&lt;span class=pl-s1&gt;self&lt;/span&gt;):&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC8&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-en&gt;super&lt;/span&gt;(&lt;span class=pl-s1&gt;mywindow&lt;/span&gt;, &lt;span class=pl-s1&gt;self&lt;/span&gt;).&lt;span class=pl-en&gt;__init__&lt;/span&gt;()&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC9&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-s1&gt;self&lt;/span&gt;.&lt;span class=pl-s1&gt;ui&lt;/span&gt; &lt;span class=pl-c1&gt;=&lt;/span&gt; &lt;span class=pl-v&gt;Ui_MainWindow&lt;/span&gt;()&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC10&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-s1&gt;self&lt;/span&gt;.&lt;span class=pl-s1&gt;ui&lt;/span&gt;.&lt;span class=pl-en&gt;setupUi&lt;/span&gt;(&lt;span class=pl-s1&gt;self&lt;/span&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC11&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC12&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-s1&gt;self&lt;/span&gt;.&lt;span class=pl-s1&gt;ui&lt;/span&gt;.&lt;span class=pl-s1&gt;label&lt;/span&gt;.&lt;span class=pl-en&gt;setFont&lt;/span&gt;(&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC13&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;            &lt;span class=pl-v&gt;QtGui&lt;/span&gt;.&lt;span class=pl-v&gt;QFont&lt;/span&gt;(&lt;span class=pl-s&gt;&amp;#39;SansSerif&amp;#39;&lt;/span&gt;, &lt;span class=pl-c1&gt;30&lt;/span&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC14&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        )&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC15&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC16&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-s1&gt;self&lt;/span&gt;.&lt;span class=pl-s1&gt;ui&lt;/span&gt;.&lt;span class=pl-s1&gt;label&lt;/span&gt;.&lt;span class=pl-en&gt;setGeometry&lt;/span&gt;(&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC17&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;            &lt;span class=pl-v&gt;QtCore&lt;/span&gt;.&lt;span class=pl-v&gt;QRect&lt;/span&gt;(&lt;span class=pl-c1&gt;10&lt;/span&gt;, &lt;span class=pl-c1&gt;10&lt;/span&gt;, &lt;span class=pl-c1&gt;200&lt;/span&gt;, &lt;span class=pl-c1&gt;200&lt;/span&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC18&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        ) &lt;span class=pl-c&gt;# изменить геометрию ярлыка&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC19&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC20&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC21&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-s1&gt;app&lt;/span&gt; &lt;span class=pl-c1&gt;=&lt;/span&gt; &lt;span class=pl-v&gt;QtWidgets&lt;/span&gt;.&lt;span class=pl-v&gt;QApplication&lt;/span&gt;([])&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC22&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-s1&gt;application&lt;/span&gt; &lt;span class=pl-c1&gt;=&lt;/span&gt; &lt;span class=pl-en&gt;mywindow&lt;/span&gt;()&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC23&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-s1&gt;application&lt;/span&gt;.&lt;span class=pl-en&gt;show&lt;/span&gt;()&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC24&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC25&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-s1&gt;sys&lt;/span&gt;.&lt;span class=pl-s1&gt;exit&lt;/span&gt;(&lt;span class=pl-s1&gt;app&lt;/span&gt;.&lt;span class=pl-en&gt;exec&lt;/span&gt;()&lt;/td&gt;
+      &lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;
+&lt;h3&gt;Меняем текст в QLabel&lt;/h3&gt;
+&lt;p&gt;
+Чтобы изменить текст в QLabel, вы можете использовать метод setText(), вот так:
+&lt;p&gt;
+&lt;table class=&quot;highlight tab-size js-file-line-container&quot; data-tab-size=&quot;8&quot; data-paste-markdown-skip&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC1&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-k&gt;from&lt;/span&gt; &lt;span class=pl-v&gt;PyQt5&lt;/span&gt; &lt;span class=pl-k&gt;import&lt;/span&gt; &lt;span class=pl-v&gt;QtWidgets&lt;/span&gt;, &lt;span class=pl-v&gt;QtGui&lt;/span&gt;,&lt;span class=pl-v&gt;QtCore&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC2&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-k&gt;from&lt;/span&gt; &lt;span class=pl-s1&gt;qlabel&lt;/span&gt; &lt;span class=pl-k&gt;import&lt;/span&gt; &lt;span class=pl-v&gt;Ui_MainWindow&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC3&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-k&gt;import&lt;/span&gt; &lt;span class=pl-s1&gt;sys&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC4&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC5&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-k&gt;class&lt;/span&gt; &lt;span class=pl-s1&gt;mywindow&lt;/span&gt;(&lt;span class=pl-v&gt;QtWidgets&lt;/span&gt;.&lt;span class=pl-v&gt;QMainWindow&lt;/span&gt;):&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC6&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC7&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;    &lt;span class=pl-k&gt;def&lt;/span&gt; &lt;span class=pl-en&gt;__init__&lt;/span&gt;(&lt;span class=pl-s1&gt;self&lt;/span&gt;):&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC8&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-en&gt;super&lt;/span&gt;(&lt;span class=pl-s1&gt;mywindow&lt;/span&gt;, &lt;span class=pl-s1&gt;self&lt;/span&gt;).&lt;span class=pl-en&gt;__init__&lt;/span&gt;()&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC9&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-s1&gt;self&lt;/span&gt;.&lt;span class=pl-s1&gt;ui&lt;/span&gt; &lt;span class=pl-c1&gt;=&lt;/span&gt; &lt;span class=pl-v&gt;Ui_MainWindow&lt;/span&gt;()&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC10&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-s1&gt;self&lt;/span&gt;.&lt;span class=pl-s1&gt;ui&lt;/span&gt;.&lt;span class=pl-en&gt;setupUi&lt;/span&gt;(&lt;span class=pl-s1&gt;self&lt;/span&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC11&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC12&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-s1&gt;self&lt;/span&gt;.&lt;span class=pl-s1&gt;ui&lt;/span&gt;.&lt;span class=pl-s1&gt;label&lt;/span&gt;.&lt;span class=pl-en&gt;setFont&lt;/span&gt;(&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC13&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;            &lt;span class=pl-v&gt;QtGui&lt;/span&gt;.&lt;span class=pl-v&gt;QFont&lt;/span&gt;(&lt;span class=pl-s&gt;&amp;#39;SansSerif&amp;#39;&lt;/span&gt;, &lt;span class=pl-c1&gt;30&lt;/span&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC14&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        )&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC15&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC16&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-s1&gt;self&lt;/span&gt;.&lt;span class=pl-s1&gt;ui&lt;/span&gt;.&lt;span class=pl-s1&gt;label&lt;/span&gt;.&lt;span class=pl-en&gt;setGeometry&lt;/span&gt;(&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC17&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;            &lt;span class=pl-v&gt;QtCore&lt;/span&gt;.&lt;span class=pl-v&gt;QRect&lt;/span&gt;(&lt;span class=pl-c1&gt;10&lt;/span&gt;, &lt;span class=pl-c1&gt;10&lt;/span&gt;, &lt;span class=pl-c1&gt;200&lt;/span&gt;, &lt;span class=pl-c1&gt;200&lt;/span&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC18&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        )&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC19&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC20&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;        &lt;span class=pl-s1&gt;self&lt;/span&gt;.&lt;span class=pl-s1&gt;ui&lt;/span&gt;.&lt;span class=pl-s1&gt;label&lt;/span&gt;.&lt;span class=pl-en&gt;setText&lt;/span&gt;(&lt;span class=pl-s&gt;&amp;quot;PyScripts&amp;quot;&lt;/span&gt;) &lt;span class=pl-c&gt;# Меняем текст&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC21&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC22&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC23&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-s1&gt;app&lt;/span&gt; &lt;span class=pl-c1&gt;=&lt;/span&gt; &lt;span class=pl-v&gt;QtWidgets&lt;/span&gt;.&lt;span class=pl-v&gt;QApplication&lt;/span&gt;([])&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC24&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-s1&gt;application&lt;/span&gt; &lt;span class=pl-c1&gt;=&lt;/span&gt; &lt;span class=pl-en&gt;mywindow&lt;/span&gt;()&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC25&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-s1&gt;application&lt;/span&gt;.&lt;span class=pl-en&gt;show&lt;/span&gt;()&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC26&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt; &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        
+        &lt;td id=&quot;file-2-py-LC27&quot; class=&quot;blob-code blob-code-inner js-file-line&quot;&gt;&lt;span class=pl-s1&gt;sys&lt;/span&gt;.&lt;span class=pl-en&gt;exit&lt;/span&gt;(&lt;span class=pl-s1&gt;app&lt;/span&gt;.&lt;span class=pl-en&gt;exec&lt;/span&gt;())&lt;/td&gt;
+      &lt;/tr&gt;
+&lt;/table&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+          <property name="wordWrap">
+           <bool>false</bool>
+          </property>
+          <property name="textInteractionFlags">
+           <set>Qt::TextSelectableByMouse</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
